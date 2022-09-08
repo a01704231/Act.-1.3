@@ -6,9 +6,15 @@
 //
 // =================================================================
 #include <iostream>
-
+#include <fstream>
+#include <string>
 using namespace std;
 
-int main(int argc, char* argv[]) {
+int main() {
+	ifstream archivoLeer;
+	string texto;
+    	archivoLeer.open("input1.txt");
+    	getline(archivoLeer,texto)
+	archivoLeer.close();
 	return 0;
 }
